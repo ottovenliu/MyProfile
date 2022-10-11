@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 html>body{
     background-color: black;
     background-image: url(../../images/hobbert_pic.jpg);
@@ -37,7 +40,7 @@ img{
     width: 100%;
    
 }
-.imgBox{
+#banner .imgBox{
     border-radius: 50%;
     overflow: hidden;
     height: min-content;
@@ -71,4 +74,18 @@ ul.skillsList{
 text-align: center;
 line-height: 1.1;
 /* word-wrap: break-word; */
+}
+#works>div.workItem{
+    min-height: 20vh;
+    backdrop-filter: blur(10px);
+    border-radius: 3rem;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn{
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    background: #999;
+    border-radius: 1rem;
 }
