@@ -75,7 +75,7 @@ text-align: center;
 line-height: 1.1;
 /* word-wrap: break-word; */
 }
-#works>div.workItem{
+div.workItem{
     min-height: 20vh;
     backdrop-filter: blur(10px);
     border-radius: 3rem;
@@ -85,7 +85,8 @@ line-height: 1.1;
     padding-top: 20px;
     padding-bottom: 20px;
     background: rgba(255,255,255,0.2);
-    
+    display: flex ;
+    align-items: center;
 }
 .btn{
     width: fit-content;
