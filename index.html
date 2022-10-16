@@ -71,7 +71,7 @@
     >
       <div class="container">
         <div class="row" id="banner">
-          <div class="col-xs-12">
+          <div class="col-xs-12 pc">
             <div class="hero-full-wrapper">
               <div class="text-content">
                 <h1>
@@ -86,34 +86,46 @@
               </div>
             </div>
           </div>
+          <div class="col-xs-12 mobile">
+            <div class="hero-full-wrapper">
+              <div class="text-content">
+                <h2>
+                  Hello,<br />
+                  <span>I'm Otto Liu</span>
+                  <span>A Front-End Web Developer</span>
+                </h2>
+              </div>
+            </div>
+          </div>
           <div class="col-xs-12">
             <p>
               A Front-End Web Developer passionate about creating interactive
               applications and experiences on the web.
             </p>
             <div class="linkBox">
-              <i class="bi bi-linkedin"></i>
-              <i class="bi bi-github"></i>
+              <a href="https://github.com/ottovenliu"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/otto-liu-8b60a115b/">
+                <i class="bi bi-linkedin"></i
+              ></a>
             </div>
           </div>
           <div class="col-xs-12">
             <div class="title">
-              <h2><em>ABOUT ME</em>- Some Info</h2>
+              <h2><em>ABOUT ME</em></h2>
             </div>
             <div class="content">
-              <div class="wordsBox col-xs-8">
+              <div class="wordsBox col-xs-12 col-sm-8">
                 <p>
                   I'm a front-end web developer with a background in data
-                  visualize dashboard and network infrastructure. I graduated
-                  from the
-                  <a href="https://training.pada-x.com/wehelp/"
-                    ><em> WeHelp Software Development Bootcamp</em></a
-                  >. I am passionate about coding and solving problems through
-                  code, and I am excited to work alongside other amazing
-                  programmers and learn so much more!
+                  visualize dashboard and network infrastructure. I am
+                  passionate about coding and solving problems through code, and
+                  I am excited to work alongside other amazing programmers and
+                  learn so much more!
                 </p>
               </div>
-              <div class="imgBox col-xs-4">
+              <div class="imgBox col-xs-12 col-sm-4">
                 <img src="./assets/images/profil.jpg" alt="" />
               </div>
             </div>
@@ -122,7 +134,7 @@
         <div class="row" id="skills">
           <div class="col-xs-12">
             <div class="title">
-              <h2><em> SKILLS</em>- My Familiar Tools</h2>
+              <h2><em> SKILLS</em></h2>
             </div>
             <div class="content">
               <ul class="skillsList">
@@ -273,22 +285,28 @@
         <div class="row" id="works">
           <div class="col-xs-12">
             <div class="title">
-              <h2><em> PROJECTS</em>- TAKE A LOOK AT MIME</h2>
+              <h2><em> PROJECTS</em></h2>
             </div>
           </div>
           <div class="col-xs-12 workItem">
-            <div class="imgBox col-xs-6">
+            <h3 class="col-xs-12 mobile">Area Monitor Analysis</h3>
+            <div class="imgBox col-xs-12 col-sm-6">
               <img src="./assets/images/works/works_rtsp.jpeg" alt="" />
               <p>
                 ( the picture is for reference only,
                 from:https://community.security.eufy.com )
               </p>
             </div>
-            <div class="wordsBox col-xs-6">
-              <h3>Area Monitor Analysis</h3>
+            <div class="wordsBox col-xs-12 col-sm-6">
+              <h3 class="pc">Area Monitor Analysis</h3>
+              <h5>
+                System used to monitor the areas and call alerts immediately,
+                draw rectangles or lines setting the alert config on multiple
+                RTSP.
+              </h5>
               <h5>
                 Technologies Used:
-                <em>Angular, RTSP, FabricJS, REST API</em>
+                <em>Angular, RTSP, FabricJS, restful API</em>
               </h5>
               <p>
                 Data fetched from monitor live stream, setting analysis type to
@@ -297,25 +315,30 @@
               </p>
 
               <p>
-                Implement ISO27001 authentication to improve the security and,
-                find out the security leak, leverage the website to HTTPS
-                security, and used a 3-way handshake.
+                Execute ISO27001 authentication to improve the security, reveal
+                the security leak, and leverage the website to HTTPS security
+                with a 3-way handshake.
               </p>
             </div>
           </div>
           <div class="col-xs-12 workItem">
-            <div class="imgBox col-xs-6">
+            <h3 class="col-xs-12 mobile">Criminal Tracking</h3>
+            <div class="imgBox col-xs-12 col-sm-6">
               <img src="./assets/images/works/works_dashboad.png" alt="" />
               <p>
                 ( the picture is for reference only, from:www.finereport.com )
               </p>
             </div>
-            <div class="wordsBox col-xs-6">
-              <h3>Criminal Tracking</h3>
-
+            <div class="wordsBox col-xs-12 col-sm-6">
+              <h3 class="pc">Criminal Tracking</h3>
+              <h5>
+                System used to track criminal persons and catch all information
+                includes: all steps driving a car in the country, financial
+                accounts, illegal records, and base personal information.
+              </h5>
               <h5>
                 Technologies Used:
-                <em>Angular, GoogleMap, ECharts, ArcGIS, REST API</em>
+                <em>Angular, GoogleMap, ECharts, ArcGIS, restful API</em>
               </h5>
               <p>
                 Implement the internal visual map of the criminal tracking
@@ -323,8 +346,9 @@
               </p>
 
               <p>
-                Integrate SonarQueb to maintain the code quality for production
-                build and avoid unpredictable errors by 90%.
+                Integrate code analysis tool SonarQueb to maintain the code
+                quality for production build and avoid unpredictable errors by
+                90%.
               </p>
               <p class="btn">
                 <a href="https://www.cna.com.tw/news/asoc/202201120095.aspx"
@@ -334,21 +358,37 @@
             </div>
           </div>
           <div class="col-xs-12 workItem">
-            <div class="imgBox col-xs-6">
+            <h3 class="col-xs-12 mobile">Retire Program</h3>
+
+            <div class="imgBox col-xs-12 col-sm-6">
               <img src="./assets/images/works/works_fubon.png" alt="" />
             </div>
-            <div class="wordsBox col-xs-6">
-              <h3>Retire Program</h3>
-
+            <div class="wordsBox col-xs-12 col-sm-6">
+              <h3 class="pc">Retire Program</h3>
               <h5>
-                Technologies Used: <em>JQuery, ECharts, Pug, REST API, Scss</em>
+                System helping the users to estimate the retired funds by their
+                life activities. And show the dynamic finance goods to a variety
+                of works
+              </h5>
+              <h5>
+                Technologies Used:
+                <em>JQuery, ECharts, Pug, restful API, Scss</em>
               </h5>
 
               <p>
                 Integrated the ECharts to create the Marketing Behavior
                 dashboard, planing consumer retired life and object.
               </p>
-              <p>Information on finance diary column pulled from a REST API.</p>
+              <p>
+                Improve website SEO followed by Google SEO Assignment standard
+                and increase website traffic by 60%. Collaborate with marketing
+                specialists, increase the user session durations by 70 % with
+                strategic planning, and integrate webChat to ensure user contact
+                info.
+              </p>
+              <p>
+                Information on finance diary column pulled from a restful API.
+              </p>
               <p class="btn">
                 <a href="https://retirement.taipeifubon.com.tw/retireEvent/"
                   >LIVE</a
@@ -357,21 +397,41 @@
             </div>
           </div>
           <div class="col-xs-12 workItem">
-            <div class="imgBox col-xs-6">
+            <h3 class="col-xs-12 mobile">Amazing Travel One Day</h3>
+            <div class="imgBox col-xs-12 col-sm-6">
               <img src="./assets/images/works/works_DayTravel.png" alt="" />
             </div>
-            <div class="wordsBox col-xs-6">
-              <h3>Amazing Travel One Day</h3>
+            <div class="wordsBox col-xs-12 col-sm-6">
+              <h3 class="pc">Amazing Travel One Day</h3>
+              <h5>
+                System let consumer design their own trip in Taipei one day and
+                compare it with a tourist guide.
+              </h5>
               <h5>
                 Technologies Used:
-                <em>Python Flask, MySQL, AWS, JsES6, REST API</em>
+                <em>Python Flask, MySQL, AWS, JsES6, restful API</em>
               </h5>
               <p>
-                Initialize user signin/signout system based on Python Flask and
-                MySQL and concatenate Payple api and plugin.
+                Implemented user sign-in/sign-out system based on Flask and
+                MySQL.Help consumer records their order detail and cart.
               </p>
-              <p>Design search system, ordering feature, chart recording.</p>
-              <p>Integrated the AWS to deploy the system.</p>
+              <p>
+                Implemented a search function with fuzzy search, and improved
+                user experience by re-sorting the search list.
+              </p>
+              <p>
+                Developed payment flow, imported Paypal plugin and captcha
+                connecting API. Ensure credit card trading security.
+              </p>
+              <p>
+                Integrated the AWS to deploy the system, and initialized the
+                remote environment. Make the web be real‑time service.
+              </p>
+              <p class="btn">
+                <a href="https://github.com/ottovenliu/taipei-day-trip-website"
+                  >DEEMO</a
+                >
+              </p>
             </div>
           </div>
         </div>
