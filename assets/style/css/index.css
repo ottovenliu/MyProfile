@@ -1,5 +1,10 @@
+p{
+    font-size: 18px !important;
+    line-height: 160% !important;
+}
 html{
     scroll-behavior: smooth;
+    font-size: 18px;
 }
 html>body{
     background-color: black;
@@ -11,7 +16,7 @@ html>body{
 }
 nav.navbar{
      backdrop-filter: blur(10px);}
-.banner{
+#banner{
     margin-top: 100px;
 }
 .hero-full-container #banner .hero-full-wrapper{
@@ -84,9 +89,12 @@ div.workItem{
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.9);
     display: flex ;
     align-items: center;
+}
+div.workItem p{
+    
 }
 .btn{
     width: fit-content;
@@ -107,4 +115,14 @@ div.workItem{
     #banner .content{
         display: initial;
     }
-  }
+    div.workItem{
+        display: initial ;
+    }
+
+    #contact .workItem{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+  
