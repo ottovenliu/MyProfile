@@ -107,9 +107,23 @@ div.workItem {
   padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.9);
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+}
+div.workItem > div.imgBox {
+}
+div.workItem > div.imgBox > p {
+  font-size: 11px !important;
 }
 div.workItem p {
+}
+div.workItem > div {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.col-lg-6 {
+  flex: 1 0 50%;
 }
 .btn {
   width: fit-content;
@@ -138,5 +152,16 @@ div.workItem p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-sm-12 {
+    flex: 1 0 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .col-lg-6 {
+    flex: 1 0 50%;
   }
 }
